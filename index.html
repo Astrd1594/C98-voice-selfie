@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selfie!</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1>Selfie time!</h1>
+            <div class="modal-fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <label><b class="text-danger">How to use: </b>
+                             Out loud, say "Take a selfie." Then the AI will take one for you</label>
+                        </div>
+                        <div class="modal-body">
+                            <button id="start" onclick="start()" class="btn btn-primary">Start Recording Voice</button>
+                            <p id="hr"> </p>
+                            <textarea placeholder="What you say will appear here" readonly="true" class="form-control" id="textbox"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="modal-fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-header">
+                                <h4>Your webcam view:</h4>
+                                <div id="webcam"></div>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Your selfie:</h4>
+                                <div id="selfie"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>

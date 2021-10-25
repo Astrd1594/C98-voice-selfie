@@ -1,0 +1,27 @@
+.modal-header, .modal-body{
+    color: darkslategrey;
+}
+#webcam{
+    border-radius: 10px;
+}
+textarea{
+    cursor: default;
+}
+#hr{
+    color: white;
+}
+.bottomimgs{
+    transition: all 0.1s ease-in-out;
+}
+textarea{
+    transition: all 0.1s ease-in-out;
+}
+textarea:hover{
+    transform: scale(1.025);
+}
+#webcam, #selfie{
+    transform: scale(1.025);
+}
+h4, h1{
+    cursor: default;
+}
